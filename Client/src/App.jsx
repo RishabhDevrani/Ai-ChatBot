@@ -21,7 +21,7 @@ function App() {
     if (!question.trim() || loadingStatus) return;
 
     setLoadingStatus(true)
-    axios.post(`http://localhost:8000/ask`, { question })
+    axios.post(`https://ai-chatbot-1h6d.onrender.com`, { question })
       .then((res) => res.data)
       .then((finalRes) => {
         console.log(finalRes);
